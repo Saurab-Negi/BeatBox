@@ -65,6 +65,11 @@
             <h2>Recently played</h2>
             <div class="cards-container">
                 <div class="card">
+                    <img src="./assets/card9img.png" class="card-img" alt="">
+                    <p class="card-title">Stay With Me</p>
+                    <p class="card-info">CHANYEOL,Punch .  Guardian The Lonely and Great God</p>
+                </div>
+                <div class="card">
                     <img src="./assets/card1img.jpeg" class="card-img" alt="">
                     <p class="card-title">Top 50 - Global</p>
                     <p class="card-info">Your daily updates of the most played tracks</p>
@@ -119,9 +124,44 @@
                 </div>
                 
             </div>
-            <br><br><br><br><br><br>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
         </div>
-        <div class="music-player">player</div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="./assets/card9img.png" alt="">
+                <div class="album-desc">
+                    <p class="album-name">Stay With Me</p>
+                    <p class="album-artist">CHANYEOL, Punch</p>
+                </div>
+                
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1"> <!-- progress bar will increase one step at a time -->
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-music control-icons"></i>
+                <i class="fa-solid fa-list-ul control-icons"></i>
+                <i class="fa-brands fa-bluetooth-b control-icons"></i>
+                <input class="control-bar" type="range" min="0" max="100" step="1">
+                <i class="fa-solid fa-volume-off control-icons"></i>
+                <i class="fa-solid fa-down-left-and-up-right-to-center control-icons"></i>
+            </div>
+        </div>
     </div>
 </body>
 </html>

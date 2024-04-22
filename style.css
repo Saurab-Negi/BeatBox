@@ -2,7 +2,7 @@ body{
     margin: 0;
     background-color: black;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow: hidden; /* To hide overflowed content in the web page */
 }
 .main{
@@ -136,11 +136,6 @@ a{
 .dark-badge{
     background-color: black;
     color: white;
-}
-@media (max-width: 1000px){
-    .hide{
-        display: none;
-    }
 }
 .cards-container{
     display: flex;
@@ -302,4 +297,30 @@ a{
 .control-icons:hover{
     opacity: 1;
     transform: scale(1.1);
+}
+
+@media (max-width: 1025px){
+    .hide, .nav-option a, .box p, .album-desc{
+        display: none;
+    }
+    .box{
+        height: 3rem;
+    }
+    .player{
+        width: 45rem;
+    }
+    .nav{
+        align-items: center;
+    }
+    .sidebar{
+        width: 13rem;
+    }
+}
+@media (max-width: 450px){
+    .sidebar, .controls, .playback-bar{
+        display: none;
+    }
+    .cards-container{
+        justify-content: center;
+    }
 }
